@@ -109,12 +109,20 @@ body {
   bottom: 0px;
 }
 
+.bottom-\[-24\%\] {
+  bottom: -24%;
+}
+
 .bottom-\[1\%\] {
   bottom: 1%;
 }
 
 .bottom-\[22\%\] {
   bottom: 22%;
+}
+
+.bottom-\[38\%\] {
+  bottom: 38%;
 }
 
 .left-0 {
@@ -361,6 +369,11 @@ body {
 .mb-8 {
   margin-bottom: 2rem;
 }
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -1228,6 +1241,10 @@ body {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pl-1\.5 {

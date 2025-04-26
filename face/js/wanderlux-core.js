@@ -96,14 +96,25 @@ if (document.querySelector(".floating-icons")) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  const contactBg = document.querySelector(".bg-contactBg");
   const readMoreBtn = document.querySelector(".read-btn");
   const contactText = document.querySelector(".contact-text");
+
   if (readMoreBtn) {
     readMoreBtn.addEventListener("click", function () {
-      contactText.classList.toggle("line-clamp-10");
+      const isExpanded = contactText.classList.toggle("line-clamp-10");
+
+      if (isExpanded) {
+        readMoreBtn.innerHTML = "Read More";
+        contactBg.classList.remove('mb-12', 'pb-8');
+      } else {
+        readMoreBtn.innerHTML = "Read Less";
+        contactBg.classList.add('mb-12', 'pb-8');
+      }
     });
   }
 });
+
 
 if (document.querySelector('input[name="category-radio"]')) {
   document.addEventListener("DOMContentLoaded", function () {
